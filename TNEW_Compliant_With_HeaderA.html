@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hawaii Opera Theatre</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://production.tnew-assets.com/orgs/HOPT/quick-start-template/dist/css/main.css" rel="stylesheet">
+
+    <style>
+      .hot-nav { background:#ffffff; border-bottom:1px solid #eee; width:100%; position:relative; }
+      .hot-nav-container { max-width:1380px; margin:0 auto; padding:0.75rem 1.25rem; display:flex; align-items:center; justify-content:space-between; }
+      .hot-nav-logo img { height:55px; }
+      #hot-mobile-btn { display:none; }
+
+      .hot-nav-links { display:flex; align-items:center; gap:2rem; }
+      .hot-nav-primary { list-style:none; display:flex; gap:1.75rem; }
+      .hot-nav-primary a { text-decoration:none; font-family:"Open Sans", sans-serif; font-size:0.95rem; color:#111; text-transform:uppercase; font-weight:600; }
+      .hot-nav-primary a:hover { color:#c21726; }
+
+      .hot-nav-actions { display:flex; gap:1rem; }
+
+      .hot-btn { padding:0.55rem 1.2rem; border-radius:4px; font-size:0.85rem; text-transform:uppercase; font-weight:700; text-decoration:none; display:inline-block; }
+
+      .hot-btn-subscribe { background:#111; color:#fff; }
+      .hot-btn-subscribe:hover { background:#333; }
+
+      .hot-btn-donate { background:#dd00a9; color:#fff; }
+      .hot-btn-donate:hover { background:#b8008b; }
+
+      @media (max-width:900px) {
+        #hot-mobile-btn { display:flex; flex-direction:column; gap:4px; background:none; border:none; }
+        #hot-mobile-btn span { width:22px; height:3px; background:#000; display:block; }
+
+        .hot-nav-links {
+          display:none;
+          position:absolute;
+          top:100%;
+          left:0;
+          width:100%;
+          background:#fff;
+          flex-direction:column;
+          padding:1.5rem;
+        }
+
+        #tn-qs-main-nav.mobile-active .hot-nav-links { display:flex; }
+
+        .hot-nav-primary { flex-direction:column; }
+        .hot-nav-actions { flex-direction:column; width:100%; }
+        .hot-btn { width:100%; text-align:center; }
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <nav id="tn-qs-main-nav" class="hot-nav" aria-label="Main Navigation">
+      <div class="hot-nav-container">
+        <a class="hot-nav-logo" href="https://www.hawaiiopera.org">
+          <img src="https://production.tnew-assets.com/orgs/HOPT/quick-start-template/images/logo.png" alt="Hawaii Opera Theatre">
+        </a>
+
+        <button id="hot-mobile-btn" type="button" onclick="mobileNavigationButton()">
+          <span></span><span></span><span></span>
+        </button>
+
+        <div class="hot-nav-links">
+          <ul class="hot-nav-primary">
+            <li><a href="https://tickets.hawaiiopera.org/">Tickets</a></li>
+            <li><a href="https://www.hawaiiopera.org/about/">About</a></li>
+            <li><a href="https://www.hawaiiopera.org/ob">Opera Ball</a></li>
+            <li><a href="https://www.hawaiiopera.org/edu">Education</a></li>
+            <li><a href="https://www.hawaiiopera.org/contact/">Contact</a></li>
+          </ul>
+
+          <div class="hot-nav-actions">
+            <a class="hot-btn hot-btn-subscribe" href="https://hawaiiopera.org/subscribe">Subscribe</a>
+            <a class="hot-btn hot-btn-donate" href="https://tickets.hawaiiopera.org/donate/contribute1">Donate</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <!--TNEW content here-->
+    </div>
+
+    <div id="tn-qs-banner-image"></div>
+    <div id="TNEW-container" class="tn-qs-container"></div>
+
+    <footer>
+      <div class="tn-qs-container">
+
+        <div class="tn-qs-footer-block">
+          <div class="tn-qs-footer-block__logo">
+            <a class="tn-qs-footer-block__logo-link" href="/">
+              <img src="https://production.tnew-assets.com/orgs/HOPT/quick-start-template/images/logo.png" alt="Hawaii Opera Theatre">
+            </a>
+          </div>
+        </div>
+
+        <div class="tn-qs-footer-block">
+          <div class="tn-qs-footer-block__location">
+            <h3>ADDRESS</h3>
+            <address>
+              <span>848 South Beretania Street, #400</span>
+              <span>Honolulu, Hawaii 96813</span>
+            </address>
+          </div>
+        </div>
+
+        <div class="tn-qs-footer-block">
+          <div class="tn-qs-footer-block__contact">
+            <h3>PHONE</h3>
+            <div>Box Office: <a href="tel:+1-808-596-7858">(808) 596-7858</a></div>
+            <div>Main Office: <a href="tel:+1-808-596-7372">(808) 596-7372</a></div>
+            <div>Fax: <a href="tel:+1-808-596-0379">(808) 596-0379</a></div>
+          </div>
+        </div>
+
+        <div class="tn-qs-footer-block">
+          <h3>INFORMATION</h3>
+          <ul>
+            <li><a href="https://www.hawaiiopera.org/jobs-opportunities/">Jobs & Opportunities</a></li>
+            <li><a href="https://www.hawaiiopera.org/financials/">Financials</a></li>
+            <li><a href="https://www.hawaiiopera.org/privacy-policy/">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div id="tn-qsopyright">
+          &copy; <script>document.write(new Date().getFullYear())</script> Hawaii Opera Theatre
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://production.tnew-assets.com/orgs/HOPT/quick-start-template/dist/js/scripts.js"></script>
+
+    <script>
+      function mobileNavigationButton() {
+        document.getElementById("tn-qs-main-nav").classList.toggle("mobile-active");
+      }
+    </script>
+
+  </body>
+</html>
